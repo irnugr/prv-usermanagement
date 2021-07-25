@@ -1,0 +1,7 @@
+id.co.microservice.usermanagement
+id.co.microservice.usermanagement.config
+id.co.microservice.usermanagement.controller
+id.co.microservice.usermanagement.quecsentity
+id.co.microservice.usermanagement.quecsrepository
+id.co.microservice.usermanagement.service
+id.co.microservice.usermanagement.service.impl

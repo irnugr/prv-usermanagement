@@ -18,7 +18,7 @@ public interface UsersRepository extends JpaRepository<Users, Long> {
 	
 	@Query(
 			nativeQuery = true,
-			value = "select id, username, password, email, createdate as createDate, "
+			value = "select id, username, password, email, firstname, lastname, createdate as createDate, "
 				  + "createby as createBy, updatedate as updateDate, updateby as updateBy "
 				  + "from users where username = :username"
 		)

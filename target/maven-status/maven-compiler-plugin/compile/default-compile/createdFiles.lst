@@ -1,0 +1,8 @@
+META-INF/spring-configuration-metadata.json
+id/co/microservice/usermanagement/quecsentity/Users.class
+id/co/microservice/usermanagement/service/impl/UserManagementServiceImpl.class
+id/co/microservice/usermanagement/service/UserManagementService.class
+id/co/microservice/usermanagement/config/QuecsDataSourceConfig.class
+id/co/microservice/usermanagement/UserManagementApplication.class
+id/co/microservice/usermanagement/controller/UserManagementController.class
+id/co/microservice/usermanagement/quecsrepository/UsersRepository.class
