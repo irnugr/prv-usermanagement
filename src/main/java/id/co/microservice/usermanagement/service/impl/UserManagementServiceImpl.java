@@ -43,12 +43,12 @@ public class UserManagementServiceImpl implements UserManagementService {
 			Users users = usersRepository.getUsersByUsername(username);
 			
 			if (users != null) {
-				response.put("users", users);
+				response.put("usernamestatus", "user found");
 			} else {
-				response.put("users", "not found");
+				response.put("usernamestatus", "not found");
 			}
 		} catch (Exception e) {
-			response.put("error", e.getMessage());
+			response.put("usernamestatus", e.getMessage());
 		}
 		
 		return response;
