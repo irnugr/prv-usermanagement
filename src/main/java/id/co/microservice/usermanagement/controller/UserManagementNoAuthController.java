@@ -7,7 +7,6 @@ import javax.servlet.http.HttpServletResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PatchMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,8 +19,8 @@ import id.co.microservice.usermanagement.service.UserManagementService;
 
 @RefreshScope
 @RestController
-@RequestMapping("/api/v1/")
-public class UserManagementController {
+@RequestMapping("/api/v1/usrmgmtnoauth/")
+public class UserManagementNoAuthController {
 	
 	@Autowired
 	UserManagementService userManagementService;
@@ -44,17 +43,6 @@ public class UserManagementController {
 			) {
 		
 		Map<String, Object> response = userManagementService.registerUser(users);
-		httpServletResponse.setStatus(HttpServletResponse.SC_OK);
-		return response;
-		
-	}
-	
-	@PatchMapping("/updatePassword")
-	Map<String, Object> updatePassword(@RequestBody Users users,
-			HttpServletResponse httpServletResponse) {
-		
-		Map<String, Object> response = userManagementService.updatePassword(users);
-		
 		httpServletResponse.setStatus(HttpServletResponse.SC_OK);
 		return response;
 		
