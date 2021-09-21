@@ -25,7 +25,7 @@ public class UserManagementNoAuthController {
 	@Autowired
 	UserManagementService userManagementService;
 	
-	@GetMapping("/checkUsernameAvailable")
+	@GetMapping("/checkUsernameAvailable/")
 	public @ResponseBody
 	Map<String, Object> getUsernameAvailable(
 			@RequestParam(value="username", required=true) String username,
