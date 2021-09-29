@@ -16,6 +16,7 @@
 		<spring-cloud.version>Hoxton.SR6</spring-cloud.version>
 		<eclipse-persistence.version>3.0.2</eclipse-persistence.version>
 		<logstash.logback.encoder>6.1</logstash.logback.encoder>
+		<prv-commons.version>0.0.1-SNAPSHOT</prv-commons.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -80,6 +81,11 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-configuration-processor</artifactId>
 			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>id.co.microservice</groupId>
+			<artifactId>prv-commons</artifactId>
+			<version>${prv-commons.version}</version>
 		</dependency>
 	</dependencies>
 	
