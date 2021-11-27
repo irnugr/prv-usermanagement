@@ -8,7 +8,7 @@
 	</parent>
   <groupId>id.co.microservice</groupId>
   <artifactId>prv-usermanagement</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
+  <version>0.0.1-SNAPSHOT</version>
   <name>prv-usermanagement</name>
   <description>User Management Service</description>
   <properties>
